@@ -2826,6 +2826,9 @@ html.mobile video.bg {
 .col-content {
     overflow: hidden
 }
+.col-content p{
+    text-align: justify;
+}
 a.button,
 input.button {
     font-size: 13px
@@ -2870,6 +2873,9 @@ input.button {
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%)
+}
+.processP{
+    text-align: justify;
 }
 .position-center {
     position: absolute;
