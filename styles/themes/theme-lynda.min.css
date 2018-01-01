@@ -2446,7 +2446,7 @@ footer.colors-d a i:hover{
     border-color:rgba(204,176,138,.7)!important
 }
 .colors-e .background-0,.colors-e.background-0{
-    background-color:rgba(0,0,0,0.5)!important
+    background:rgba(0,0,0,0.5);
 }
 .colors-e .background-5,.colors-e.background-5{
     background-color:rgba(20,20,20,.05)!important

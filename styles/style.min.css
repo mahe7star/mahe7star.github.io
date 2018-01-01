@@ -3390,7 +3390,7 @@ body>footer .photo>div {
     left: 0;
     pointer-events: none;
     display: block;
-    filter:blur(5px);
+    /*filter:blur(5px);*/
 }
 body>.bg {
     position: fixed
