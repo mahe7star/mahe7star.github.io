@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+*{
+	margin: 0;
+	padding: 0;
+	border:0;
+  font-family: 'Anton', sans-serif;
+
+}
+li{
+  list-style: none;
+}
+/*----main starts----*/
+
+.main{
+	background: #fff;
+  padding: 0 !important;
+}
+
+/*-----header start-----*/
+
+.header-logo{
+  background: #111;
+  width: 100%!important;
+  position: fixed;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 9fr 1fr;
+}
+.i1{
+  grid-column: 2;
+}
+.header-logo-ul{
+  margin: 0;
+}
+.header-logo li{
+  display: inline-block;
+  list-style: none;
+}
+.header-logo li a:hover{
+  color: #ccc;
+  text-decoration: none;
+}
+.logo{
+  color: #888 !important;
+  font-size: 20px !important
+}
+
+/*----end of header-----*/
+
+/*-----first div--------*/
+
+.main-content{
+ display: grid;
+ grid-template-columns: 1fr 12fr 5fr 1fr;
+ justify-items:center;
+ align-items: center;
+ height: 100vh;
+}
+
+/*----social media div----*/
+.m1{
+  grid-column: 1;
+  display: grid;
+  height: 100%;
+  grid-template-rows: repeat(8,4fr);
+  justify-items: center;
+  align-items: center;
+  background: #111;
+  position: fixed;
+  padding: 25px;
+  left: 0;
+}
+.m1 a{
+  color: #fff;
+}
+.m1 a:hover,.m1 a:focus{
+  color: #aaa;
+  text-decoration: none;
+}
+.m-l1,.m-l2,.m-l3,.m-l4{
+  transform: rotate(270deg);
+}
+.m-l1{
+  grid-row: 6;
+}
+.m-l2{
+  grid-row: 4;
+}
+.m-l3{
+  grid-row: 5;
+}
+.m-l4{
+  grid-row: 3;
+}
+/*-----mid content div-----*/
+
+.mid-content-div{
+  grid-column: 2;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.r1{
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.r2{
+  grid-row: 2;
+}
+.m2{
+  grid-column: 1;
+}
+.m3{
+  grid-column: 2;
+}
+.m4{
+  grid-column: 3;
+}
+.m2,.m3{
+  padding:0 20px;
+}
+.display-pic{
+  text-align: center;
+}
+.display-pic img{
+  width: 300px;
+  border-radius: 250px
+}
+.about{
+  color: #111;
+  cursor: pointer;
+  user-select: none;
+}
+.about label{
+  color: #111;
+}
+/*-----mid-content-div end-----*/
+
+
+
+
+/*------nav items--------*/
+
+.m5{
+  display: grid;
+  height: 100%;
+  grid-column: 5;
+  grid-template-rows: repeat(6,4fr);
+  justify-items: center;
+  align-items: center;
+  background: #111;
+  position: fixed;
+  right: 0;
+  padding: 10px;
+}
+.m5 a{
+  color: #fff;
+}
+.m5 a:hover,.m5 a:focus{
+  color: #aaa;
+  text-decoration: none;
+}
+.l1,.l2,.l3,.l4{
+  transform: rotate(90deg);
+}
+.l1{
+  grid-row: 2;
+}
+.l2{
+  grid-row: 3;
+}
+.l3{
+  grid-row: 4;
+}
+.l4{
+  grid-row: 5;
+}
+
+/*-----nav items end-----*/
