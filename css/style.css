@@ -104,9 +104,18 @@ li{
   display: grid;
   padding: 10px 0 15px;
   display: grid;
+  grid-template-rows:1fr 6fr;
+}
+.m-r1{
+  grid-row: 1;
+  text-align: center;
+}
+/*---content----*/
+.m-r2{
+  display: grid;
   border: 1px solid;
-  margin-top: 40px;
   grid-template-rows: 1fr 1fr;
+  padding-bottom: 15px
 }
 .r1{
   grid-row: 1;
