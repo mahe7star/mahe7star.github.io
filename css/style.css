@@ -23,7 +23,7 @@ li{
   background: #111;
   width: 100%!important;
   position: fixed;
-  padding: 10px;
+  height: 40px;
   display: grid;
   grid-template-columns: 1fr 9fr 1fr;
 }
@@ -43,6 +43,7 @@ li{
 }
 .logo{
   color: #888 !important;
+  line-height: 40px;
   font-size: 20px !important
 }
 
@@ -98,15 +99,13 @@ li{
 .mid-content-div{
   grid-column: 2;
   display: grid;
+  margin-top: 40px;
   grid-template-rows: 1fr 1fr;
 }
 .r1{
   grid-row: 1;
   display: grid;
   grid-template-columns: 1fr 1fr;
-}
-.r2{
-  grid-row: 2;
 }
 .m2{
   grid-column: 1;
@@ -120,13 +119,7 @@ li{
 .m2,.m3{
   padding:0 20px;
 }
-.display-pic{
-  text-align: center;
-}
-.display-pic img{
-  width: 300px;
-  border-radius: 250px
-}
+
 .about{
   color: #111;
   cursor: pointer;
@@ -134,6 +127,43 @@ li{
 }
 .about label{
   color: #111;
+}
+/*----row 2 content----*/
+.r2{
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: repeat(3,3fr);
+  justify-items: center;
+  align-items: center;
+}
+.pie{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background:#222;
+  overflow: hidden;
+  position: relative;
+}
+.pie::before{
+  content: "";
+  position: absolute;
+  padding: 50%;
+  left: 50%;
+  background: #aaa;
+  bottom: 50%;
+  transform: skewY(30deg);
+  transform-origin: bottom left;
+}
+.design-ul{
+  text-align: right;
+}
+/*----row 2 content end---*/
+.display-pic{
+  text-align: center;
+}
+.display-pic img{
+  width: 300px;
+  border-radius: 250px
 }
 /*-----mid-content-div end-----*/
 
