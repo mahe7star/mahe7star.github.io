@@ -115,6 +115,7 @@ li{
 }
 .m2{
   grid-column: 1;
+  border-right: 1px dashed;
 }
 .m3{
   grid-column: 2;
@@ -146,20 +147,27 @@ li{
   height: 200px;
   width: 200px;
   border-radius: 50%;
-  background:#222;
-  overflow: hidden;
   position: relative;
+  background:linear-gradient(90deg,#222 50%,#aaa 0);
 }
 .pie::before{
   content: "";
+  background:#222;
+  margin-left: 50%;
   position: absolute;
-  padding: 50%;
-  left: 50%;
-  background: #aaa;
-  bottom: 50%;
-  transform: skewY(30deg);
-  transform-origin: bottom left;
+  border-radius: 0 100% 100% 0/50%;
+  transform: rotate(0deg);
+  transform-origin: left;
+  height: 200px;
+  width: 100px;
+  animation: piechart 1s linear;
+  animation-fill-mode: forwards;
 }
+
+@keyframes piechart{
+  to{transform: rotate(130deg);}
+}
+
 .design-ul{
   text-align: right;
 }
