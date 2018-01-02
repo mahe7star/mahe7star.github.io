@@ -7,6 +7,9 @@
   font-family: 'Anton', sans-serif;
 
 }
+body{
+  background:#111;
+}
 li{
   list-style: none;
 }
@@ -99,6 +102,9 @@ li{
 .mid-content-div{
   grid-column: 2;
   display: grid;
+  padding: 10px 0 15px;
+  display: grid;
+  border: 1px solid;
   margin-top: 40px;
   grid-template-rows: 1fr 1fr;
 }
@@ -160,10 +166,14 @@ li{
 /*----row 2 content end---*/
 .display-pic{
   text-align: center;
+  align-items: center;
 }
 .display-pic img{
   width: 300px;
-  border-radius: 250px
+  border-radius: 250px;
+  border-radius: 50%;
+  border: 1px solid;
+  mix-blend-mode: normal;
 }
 /*-----mid-content-div end-----*/
 
