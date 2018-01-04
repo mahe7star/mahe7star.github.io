@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import 'mixin.scss';
+
+// keyframe aniimations
+@include keyframes(piechart) {
+	from{
+		transform: rotate(0deg);
+	}
+    to {
+	transform: rotate(130deg);
+    }
+} 
+// defining mixin
+@mixin piechart {
+  @include animate(piechart, 2s, 1, forwards);
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	border:0;
+  	font:{
+  		family: 'Anton', sans-serif;
+  	}
+}
+body{
+	color:red;
+}
+li{
+  list-style: none;
+}
+// main div
+.main{
+	// header start
+	.header-logo{
+	  background: #111;
+	  width: 100%!important;
+	  position: fixed;
+	  height: 40px;
+	  display: grid;
+	  grid-template-columns: 1fr 9fr 1fr;
+
+	  .i1{
+		  grid-column: 2;
+		}
+		.header-logo-ul{
+		  margin: 0;
+		  li{
+			  display: inline-block;
+			  list-style: none;
+			}
+			& a:hover{
+			  color: #ccc;
+			  text-decoration: none;
+			}
+			.logo{
+			  color: #888 !important;
+			  line-height: 40px;
+			  font:{
+			  	size: 20px !important
+			  }
+			}
+		}
+	}
+	//header end
+
+	//main content
+	.main-content{
+		display: grid;
+		grid-template-columns: 1fr 12fr 5fr 1fr;
+		justify-items:center;
+		align-items: center;
+		height: 100vh;
+		background:{
+			image:url('../../images/dp.jpg');
+			repeat:no-repeat;
+			position:right;
+		}
+		// social media bar
+		.m1{
+		  grid-column: 1;
+		  display: grid;
+		  height: 100%;
+		  grid-template-rows: repeat(8,4fr);
+		  justify-items: center;
+		  align-items: center;
+		  background: #111;
+		  position: fixed;
+		  padding: 20px;
+		  left: 0;
+		  	a{
+			  color: #fff;
+			  font-size: 20px;
+			  &:hover,&:focus{
+			  	color: #aaa;
+  				text-decoration: none;
+			  }
+			}
+			.m-l1,.m-l2,.m-l3,.m-l4{
+			  transform: rotate(270deg);
+			}
+			.m-l1{
+			  grid-row: 6;
+			}
+			.m-l2{
+			  grid-row: 4;
+			}
+			.m-l3{
+			  grid-row: 5;
+			}
+			.m-l4{
+			  grid-row: 3;
+			}
+		}
+		// mid content
+		.mid-content-div{
+		  grid-column: 2;
+		  display: grid;
+		  padding: 10px 0 15px;
+		  display: grid;
+		  grid-template-rows:1fr 6fr;
+
+		    .m-r1{
+			  grid-row: 1;
+			  text-align: center;
+			}
+			.m-r2{
+			  display: grid;
+			  border: 1px solid;
+			  grid-template-rows: 1fr 1fr;
+			  padding-bottom: 15px;
+			    .r1{
+				  grid-row: 1;
+				  display: grid;
+				  grid-template-columns: 1fr 1fr;
+				  .m2,.m3{
+					  padding:0 20px;
+					}
+				  .m2{
+					  grid-column: 1;
+					  border-right: 1px dashed;
+					}
+					.m3{
+					  grid-column: 2;
+					}
+					.about{
+					  color: #111;
+					  cursor: pointer;
+					  color: #111;
+					  font-size: 15px;
+					  letter-spacing: 0.05em;
+					  user-select: none;
+					  label{
+						  color: #111;
+						}
+					} 
+				}
+				.r2{
+				  grid-row: 2;
+				  display: grid;
+				  grid-template-columns: repeat(3,3fr);
+				  justify-items: center;
+				  align-items: center;
+					 .pie{
+						  height: 200px;
+						  width: 200px;
+						  border-radius: 50%;
+						  position: relative;
+						  background:linear-gradient(90deg,#333 50%,#ccc 0);
+						  &::before{
+							  content: "";
+							  background:#333;
+							  margin-left: 50%;
+							  position: absolute;
+							  border-radius: 0 100% 100% 0/50%;
+							  transform: rotate(0deg);
+							  transform-origin: left;
+							  height: 200px;
+							  width: 100px;
+							  @include piechart;
+							}
+						}
+					.design-ul{
+						  text-align: right;
+						}	
+				}
+			}
+		}
+		.m4{
+		  grid-column: 3;
+		}
+		.m5{
+		  display: grid;
+		  height: 100%;
+		  grid-column: 5;
+		  grid-template-rows: repeat(6,4fr);
+		  justify-items: center;
+		  align-items: center;
+		  background: #111;
+		  position: fixed;
+		  right: 0;
+		  padding: 10px;
+
+		    a{
+			  color: #fff;
+
+			  &:hover,&:focus{
+			  	color: #aaa;
+  				text-decoration: none;
+			    }
+			}
+			.l1,.l2,.l3,.l4{
+			  transform: rotate(90deg);
+			}
+		    .l1{
+				grid-row: 2;
+			}
+			.l2{
+			  grid-row: 3;
+			}
+			.l3{
+			  grid-row: 4;
+			}
+			.l4{
+			  grid-row: 5;
+			}
+		}
+	} 
+}
