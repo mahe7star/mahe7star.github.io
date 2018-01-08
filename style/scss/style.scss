@@ -258,7 +258,8 @@ li{
 						  width: 200px;
 						  border-radius: 50%;
 						  position: relative;
-						  background:linear-gradient(90deg,#333 50%,#ccc 0);
+						  border: 1px solid #333;
+						  background:linear-gradient(90deg,#333 50%,#fff 0);
 						  &::before{
 							  content: "";
 							  background:#333;
