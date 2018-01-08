@@ -23,6 +23,17 @@
   		family: 'Anton', sans-serif;
   	}
 }
+.highlight{
+	color:#1078b7 !important;
+}
+.index-1{
+	display:block;
+	z-index: 1;
+}
+.index-0{
+	display:none;
+	z-index: -1;
+}
 body{
 	color:red;
 }
@@ -39,7 +50,7 @@ li{
 	  height: 40px;
 	  display: grid;
 	  grid-template-columns: 1fr 9fr 1fr;
-
+	  z-index: 1000;
 	  .i1{
 		  grid-column: 2;
 		}
@@ -63,66 +74,133 @@ li{
 		}
 	}
 	//header end
+	// social media bar
+	.m1{
+	  grid-column: 1;
+	  display: grid;
+	  height: 100%;
+	  grid-template-rows: repeat(9,2fr);
+	  justify-items: center;
+	  align-items: center;
+	  background: #111;
+	  position: fixed;
+	  padding: 18px;
+	  transition: 0.3s;
+	  z-index: 1000;
+	  left: 0;
+	  &:hover{
+	  	padding:22px;
+	  	a{
+	  		font-size: 16px;
+	  	}
+	  }
+	  	a{
+		  color: #fff;
+		  font-size: 14px;
+		  transition:0.1s;
+		  &:hover,&:focus{
+		  	color: #aaa;
+				text-decoration: none;
+		  }
+		}
+		.m-l1,.m-l2,.m-l3,.m-l4,.m-l5{
+		  transform: rotate(270deg);
+		}
+		.m-l1{
+		  grid-row: 7;
+		}
+		.m-l2{
+		  grid-row: 5;
+		}
+		.m-l3{
+		  grid-row: 6;
+		}
+		.m-l4{
+		  grid-row: 4;
+		}
+		.m-l5{
+			grid-row:3;
+		}
+	}
+	// socail media end
+	// side nav
+	.m5{
+		  display: grid;
+		  height: 100%;
+		  grid-column: 5;
+		  grid-template-rows: repeat(6,4fr);
+		  justify-items: center;
+		  align-items: center;
+		  background: #111;
+		  position: fixed;
+		  right: 0;
+		  padding: 2px;
+		  z-index: 1000;
+		  transition: 0.4s;
+		   	&:hover{
+		   		padding:6px;
+		   		a{
+		   			font-size: 15px;
+		   		}
+		   	}
+		    a{
+			  color: #fff;
+			  transition:0.1s;
 
-	//main content
-	.main-content{
+			  &:hover,&:focus{
+			  	color: #aaa;
+  				text-decoration: none;
+			    }
+			}
+			.l1,.l2,.l3,.l4{
+			  transform: rotate(90deg);
+			}
+		    .l1{
+				grid-row: 2;
+			}
+			.l2{
+			  grid-row: 3;
+			}
+			.l3{
+			  grid-row: 4;
+			}
+			.l4{
+			  grid-row: 5;
+			}
+		}
+		// side nav end
+	// landing section
+	.landing-section{
+		position:absolute;
+		top: 0;
+		bottom:0;
+		left: 0;
+		right: 0;
+		height: 100vh;
+		background:#fff;
+		display: grid;
+		grid-template-columns:2fr 1fr;
+		align-items:center;
+		justify-items:center;
+		.desc{
+			grid-column:1;
+			padding-left:62px;
+			p{
+				font-size: 25px;
+			}
+		}
+	}
+	//about content
+	.about-content{
 		display: grid;
 		grid-template-columns: 1fr 12fr 5fr 1fr;
 		justify-items:center;
 		align-items: center;
 		height: 100vh;
-		// background:{
-		// 	image:url('../../images/dp.jpg');
-		// 	repeat:no-repeat;
-		// 	position:right;
-		// }
-		// social media bar
-		.m1{
-		  grid-column: 1;
-		  display: grid;
-		  height: 100%;
-		  grid-template-rows: repeat(9,2fr);
-		  justify-items: center;
-		  align-items: center;
-		  background: #111;
-		  position: fixed;
-		  padding: 18px;
-		  transition: 0.3s;
-		  left: 0;
-		  &:hover{
-		  	padding:22px;
-		  	a{
-		  		font-size: 16px;
-		  	}
-		  }
-		  	a{
-			  color: #fff;
-			  font-size: 14px;
-			  transition:0.1s;
-			  &:hover,&:focus{
-			  	color: #aaa;
-  				text-decoration: none;
-			  }
-			}
-			.m-l1,.m-l2,.m-l3,.m-l4,.m-l5{
-			  transform: rotate(270deg);
-			}
-			.m-l1{
-			  grid-row: 7;
-			}
-			.m-l2{
-			  grid-row: 5;
-			}
-			.m-l3{
-			  grid-row: 6;
-			}
-			.m-l4{
-			  grid-row: 4;
-			}
-			.m-l5{
-				grid-row:3;
-			}
-		}
+		position: absolute;
+		top: 0;
+		left: 0;
+		background:#fff;
 		// mid content
 		.mid-content-div{
 		  grid-column: 2;
@@ -212,48 +290,6 @@ li{
 			  mix-blend-mode: normal;
 			}
 		} 
-		.m5{
-		  display: grid;
-		  height: 100%;
-		  grid-column: 5;
-		  grid-template-rows: repeat(6,4fr);
-		  justify-items: center;
-		  align-items: center;
-		  background: #111;
-		  position: fixed;
-		  right: 0;
-		  padding: 2px;
-		  transition: 0.3s;
-		   	&:hover{
-		   		padding:6px;
-		   		a{
-		   			font-size: 15px;
-		   		}
-		   	}
-		    a{
-			  color: #fff;
-			  transition:0.1s;
-
-			  &:hover,&:focus{
-			  	color: #aaa;
-  				text-decoration: none;
-			    }
-			}
-			.l1,.l2,.l3,.l4{
-			  transform: rotate(90deg);
-			}
-		    .l1{
-				grid-row: 2;
-			}
-			.l2{
-			  grid-row: 3;
-			}
-			.l3{
-			  grid-row: 4;
-			}
-			.l4{
-			  grid-row: 5;
-			}
-		}
+		
 	} 
 }
