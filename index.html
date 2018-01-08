@@ -3,14 +3,15 @@
 <head>
 	<title> Mahesh</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" type="image/png" href="favicon.png" />
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="style/css/style1.css">
-	<link rel="stylesheet" href="css/animate.css">
+	<link rel="icon" type="image/png" href="favicon.png" >
+	<link rel="stylesheet" type="text/css" href="style/css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script src="wow.min.js"></script>
+	<script type="text/javascript" src="js/wow.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 	<script>
 		new WOW().init();
 	</script>
@@ -24,30 +25,48 @@
           <li><a class=" logo" href="index.html"> MAHESH </a></li>
         </ul>
       </div>
-      <!-- main content -->
-      <div class=" main-content">
-          <div class="m1">
-              <li class="m-l1"><a href="https://www.facebook.com/Mahe7star" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-              <li class="m-l2"><a href="https://dribbble.com/mahe7star" target="_blank"><i class="fab fa-dribbble"></i></a></li>
-              <li class="m-l3"><a href="https://www.instagram.com/mahi7star/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-              <li class="m-l4"><a href="https://www.linkedin.com/in/maheshpratap1995/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-          </div>
+      
+      <!-- socail media -->
+      <div class="m1">
+        <li class="m-l1"><a href="https://www.facebook.com/Mahe7star" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+        <li class="m-l2"><a href="https://dribbble.com/mahe7star" target="_blank"><i class="fab fa-dribbble"></i></a></li>
+        <li class="m-l3"><a href="https://www.instagram.com/mahi7star/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li class="m-l4"><a href="https://www.linkedin.com/in/maheshpratap1995/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+        <li class="m-l5"><a href="https://github.com/mahe7star/"><i class="fab fa-github"></i></a></li>
+      </div>
+      <!-- nav -->
+      <div class="m5">
+          <li class="l1" id="home"><a href="javascript:void(0);">Home</a></li>
+          <li class="l2" id="about"><a href="javascript:void(0);">About</a></li>
+          <li class="l3" id="portfolio"><a href="javascript:void(0);">Portfolio</a></li>
+          <li class="l4" id="contact"><a href="javascript:void(0);">Contact</a></li>
+      </div>
+      <!-- landing section -->
+      <section class="mg-section landing-section index-1 fadeIn">
+        <div class="desc">
+          <h1>Hey.</h1>
+          <p >I'm a <span class="highlight">Front-End Developer</span>  and <span class="highlight">Interface Designer</span>  from New Delhi, India. I enjoy turning complex problems into simple, beautiful and intuitive interface designs. When I'm not coding or pushing pixels, you'll find me breaking bread.</p>
+          <p>I love to experiment with graphics and interactivity.</p>
+        </div>
+      </section>
+      <!-- about content -->
+      <section class="mg-section about-content">
           <div class="mid-content-div">
             <div class="m-r1">
-              <h2>Who am i ?</h2>
+              <h1>About me.</h1>
             </div>
             <div class="m-r2">
               <div class="r1">
                 <div class="m2">
                   <h2 class="section-head">< Coder ></h2>
                   <p class="about">
-                   Front-End Web Developer who focuses on writing clean, elegent and efficient code.
+                   <span class="highlight">Front-End Web Developer</span> Front-End Web Developer who focuses on writing clean, elegent and efficient code.
                   </p> 
                 </div>
                 <div class="m3">
                   <h2 class="section-head">Designer</h2>
                   <p class="about">
-                   UI/UX Designer with a passion for designing beautiful and functional user experiences.
+                   <span class="highlight"> UI/UX Designer </span> with a passion for designing beautiful and functional user experiences.
                   </p> 
                 </div>
               </div>
@@ -79,13 +98,8 @@
           <div class="m4 display-pic">
               <img src="images/dp.jpg">
           </div>
-         <div class="m5">
-              <li class="l1"><a href="#">Home</a></li>
-              <li class="l2"><a href="#">About</a></li>
-              <li class="l3"><a href="#">Portfolio</a></li>
-              <li class="l4"><a href="#">Contact</a></li>
-         </div>
-      </div>
+         
+      </section>
    </div>
 </body>
 </html>
