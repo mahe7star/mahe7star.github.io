@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Nunito:900');
+@import url('https://fonts.googleapis.com/css?family=Uncial+Antiqua');
 @import 'mixin.scss';
 
 // keyframe aniimations
@@ -20,7 +21,7 @@
 	padding: 0;
 	border:0;
   	font:{
-  		family: 'Anton', sans-serif;
+  		family: 'Nunito', sans-serif;
   	}
 }
 .highlight{
@@ -36,6 +37,7 @@
 }
 body{
 	color:red;
+	overflow:hidden;
 }
 li{
   list-style: none;
@@ -65,10 +67,11 @@ li{
 			  text-decoration: none;
 			}
 			.logo{
-			  color: #888 !important;
+			  color: #fff !important;
 			  line-height: 40px;
 			  font:{
-			  	size: 20px !important
+			  	size: 20px !important;
+			  	family: 'Uncial Antiqua', cursive
 			  }
 			}
 		}
@@ -186,7 +189,7 @@ li{
 			grid-column:1;
 			padding-left:62px;
 			p{
-				font-size: 25px;
+				font-size: 30px;
 			}
 		}
 	}
@@ -281,7 +284,7 @@ li{
 		.display-pic{
 		  text-align: center;
 		  align-items: center;
-		  margin-top: 65px;
+		  margin-top: 70px;
 		  img{
 			  width: 300px;
 			  border-radius: 250px;

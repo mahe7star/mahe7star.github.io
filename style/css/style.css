@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Anton");
+@import url("https://fonts.googleapis.com/css?family=Nunito:900");
+@import url("https://fonts.googleapis.com/css?family=Uncial+Antiqua");
 @-webkit-keyframes piechart {
   from {
     -webkit-transform: rotate(0deg);
@@ -31,7 +32,7 @@
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: 'Anton', sans-serif; }
+  font-family: 'Nunito', sans-serif; }
 
 .highlight {
   color: #1078b7 !important; }
@@ -45,7 +46,8 @@
   z-index: -1; }
 
 body {
-  color: red; }
+  color: red;
+  overflow: hidden; }
 
 li {
   list-style: none; }
@@ -69,9 +71,10 @@ li {
       color: #ccc;
       text-decoration: none; }
     .main .header-logo .header-logo-ul .logo {
-      color: #888 !important;
+      color: #fff !important;
       line-height: 40px;
-      font-size: 20px !important; }
+      font-size: 20px !important;
+      font-family: 'Uncial Antiqua', cursive; }
 
 .main .m1 {
   grid-column: 1;
@@ -178,7 +181,7 @@ li {
     grid-column: 1;
     padding-left: 62px; }
     .main .landing-section .desc p {
-      font-size: 25px; }
+      font-size: 30px; }
 
 .main .about-content {
   display: grid;
@@ -285,7 +288,7 @@ li {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-top: 65px; }
+    margin-top: 70px; }
     .main .about-content .display-pic img {
       width: 300px;
       border-radius: 250px;
