@@ -27,6 +27,14 @@
 .highlight{
 	color:#1078b7 !important;
 }
+.stroke-blue{
+	-webkit-text-stroke:1px #1078b7;
+	color:#fff;
+}
+.stroke-white{
+	-webkit-text-stroke:1px #fff;
+	color:#000;
+}
 .index-1{
 	display:block;
 	z-index: 1;
@@ -67,7 +75,6 @@ li{
 			  text-decoration: none;
 			}
 			.logo{
-			  color: #fff !important;
 			  line-height: 40px;
 			  font:{
 			  	size: 20px !important;
