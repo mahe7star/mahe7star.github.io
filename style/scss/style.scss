@@ -97,6 +97,7 @@ li{
 	  padding: 18px;
 	  transition: 0.3s;
 	  z-index: 1000;
+	  width: auto;
 	  left: 0;
 	  &:hover{
 	  	padding:22px;
@@ -130,6 +131,34 @@ li{
 		}
 		.m-l5{
 			grid-row:3;
+		}
+	}
+	.socialMax{
+	    width: 100%;
+	    
+	    grid-template-columns: repeat(9, 2fr);
+	    .m-l1,.m-l2,.m-l3,.m-l4,.m-l5{
+		  transform: rotate(0deg);
+		}
+		.m-l1{
+		  grid-row: 5;
+		  grid-column:3;
+		}
+		.m-l2{
+		  grid-row: 5;
+		  grid-column:4;
+		}
+		.m-l3{
+		  grid-row: 5;
+		  grid-column:5;
+		}
+		.m-l4{
+		  grid-row: 5;
+		  grid-column:6;
+		}
+		.m-l5{
+			grid-row:5;
+			grid-column:7;
 		}
 	}
 	// socail media end
