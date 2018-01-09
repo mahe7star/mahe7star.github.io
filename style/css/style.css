@@ -127,10 +127,16 @@ li {
     grid-row: 4; }
   .main .m1 .m-l5 {
     grid-row: 3; }
+  .main .m1 .contactM {
+    display: none; }
 
 .main .socialMax {
   width: 100%;
   grid-template-columns: repeat(9, 2fr); }
+  .main .socialMax:hover {
+    padding: 22px; }
+    .main .socialMax:hover a {
+      font-size: 34px; }
   .main .socialMax .m-l1, .main .socialMax .m-l2, .main .socialMax .m-l3, .main .socialMax .m-l4, .main .socialMax .m-l5 {
     -webkit-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
@@ -150,6 +156,26 @@ li {
   .main .socialMax .m-l5 {
     grid-row: 5;
     grid-column: 7; }
+  .main .socialMax .contactM {
+    display: block;
+    grid-row: 7;
+    grid-column: 5;
+    text-align: center; }
+  .main .socialMax a {
+    color: #fff;
+    font-size: 34px;
+    -webkit-transition: 0.1s;
+    -o-transition: 0.1s;
+    transition: 0.1s; }
+    .main .socialMax a:hover, .main .socialMax a:focus {
+      color: #aaa;
+      text-decoration: none; }
+  .main .socialMax .mobile:hover {
+    color: #aaa;
+    cursor: pointer; }
+  .main .socialMax .mail {
+    font-size: 14px !important;
+    color: #333; }
 
 .main .m5 {
   display: grid;

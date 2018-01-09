@@ -132,11 +132,19 @@ li{
 		.m-l5{
 			grid-row:3;
 		}
+		.contactM{
+			display: none;
+		}
 	}
 	.socialMax{
 	    width: 100%;
-	    
 	    grid-template-columns: repeat(9, 2fr);
+	    &:hover{
+		  	padding:22px;
+		  	a{
+		  		font-size: 34px;
+		  	}
+		  }
 	    .m-l1,.m-l2,.m-l3,.m-l4,.m-l5{
 		  transform: rotate(0deg);
 		}
@@ -159,6 +167,31 @@ li{
 		.m-l5{
 			grid-row:5;
 			grid-column:7;
+		}
+		.contactM{
+			display: block;
+			grid-row:7;
+			grid-column:5;
+			text-align: center;
+		}
+		a{
+		  color: #fff;
+		  font-size: 34px;
+		  transition:0.1s;
+		  &:hover,&:focus{
+		  	color: #aaa;
+			text-decoration: none;
+		  }
+		}
+		.mobile{
+			&:hover{
+				color: #aaa;
+				cursor: pointer;
+			}
+		}
+		.mail{
+			font-size: 14px !important;
+			color: #333;
 		}
 	}
 	// socail media end
