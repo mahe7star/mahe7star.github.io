@@ -70,13 +70,20 @@ li{
 		  li{
 			  display: inline-block;
 			  list-style: none;
+			  border-radius: 50%;
+			  background: #fff;
+			  height: 25px;
+			  width: 25px;
+			  margin-top: 7px;
 			}
 			& a:hover{
 			  color: #ccc;
 			  text-decoration: none;
 			}
 			.logo{
-			  line-height: 40px;
+			  line-height: 24px!important;
+			  padding: 4px;
+			  letter-spacing: 5px;
 			  font:{
 			  	size: 20px !important;
 			  	// family: 'Uncial Antiqua', cursive

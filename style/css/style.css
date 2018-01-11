@@ -74,12 +74,19 @@ li {
     margin: 0; }
     .main .header-logo .header-logo-ul li {
       display: inline-block;
-      list-style: none; }
+      list-style: none;
+      border-radius: 50%;
+      background: #fff;
+      height: 25px;
+      width: 25px;
+      margin-top: 7px; }
     .main .header-logo .header-logo-ul a:hover {
       color: #ccc;
       text-decoration: none; }
     .main .header-logo .header-logo-ul .logo {
-      line-height: 40px;
+      line-height: 24px !important;
+      padding: 4px;
+      letter-spacing: 5px;
       font-size: 20px !important; }
 
 .main .m1 {
