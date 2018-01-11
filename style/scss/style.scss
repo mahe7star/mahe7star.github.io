@@ -46,6 +46,7 @@
 body{
 	color:red;
 	overflow:hidden;
+	
 }
 li{
   list-style: none;
@@ -95,9 +96,9 @@ li{
 	  background: #111;
 	  position: fixed;
 	  padding: 18px;
-	  transition: 0.3s;
+	  transition: 1s;
 	  z-index: 1000;
-	  width: auto;
+	  width: 50px;
 	  left: 0;
 	  &:hover{
 	  	padding:22px;
@@ -134,6 +135,9 @@ li{
 		}
 		.contactM{
 			display: none;
+		}
+		.touch{
+			@extend .contactM;
 		}
 	}
 	.socialMax{
@@ -172,6 +176,13 @@ li{
 			display: block;
 			grid-row:7;
 			grid-column:5;
+			text-align: center;
+			font-size: 18px;
+		}
+		.touch{
+			display: block;
+			grid-row:2;
+			grid-column:4/7;
 			text-align: center;
 		}
 		a{
