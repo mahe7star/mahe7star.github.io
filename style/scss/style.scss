@@ -11,9 +11,20 @@
 	transform: rotate(130deg);
     }
 } 
+@include keyframes(social-media-icons) {
+	from{
+		
+	}
+    to {
+	transform: rotate(130deg);
+    }
+} 
 // defining mixin
 @mixin piechart {
   @include animate(piechart, 2s, 1, forwards);
+}
+@mixin social-media-icons {
+  @include animate(social-media-icons, 2s, 1, forwards);
 }
 
 *{
@@ -103,7 +114,7 @@ li{
 	  background: #111;
 	  position: fixed;
 	  padding: 18px;
-	  transition: 1s;
+	  transition: 0.8s;
 	  z-index: 1000;
 	  width: 50px;
 	  left: 0;
@@ -127,18 +138,28 @@ li{
 		}
 		.m-l1{
 		  grid-row: 7;
+		  grid-column:1;
+	      transition: 1s;
 		}
 		.m-l2{
 		  grid-row: 5;
+		  grid-column:1;
+	      transition: 1s;
 		}
 		.m-l3{
 		  grid-row: 6;
+		  grid-column:1;
+	      transition: 1s;
 		}
 		.m-l4{
 		  grid-row: 4;
+		  grid-column:1;
+	      transition: 1s;
 		}
 		.m-l5{
 			grid-row:3;
+			grid-column:1;
+		    transition: 1s;
 		}
 		.contactM{
 			display: none;
