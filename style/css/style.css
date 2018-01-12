@@ -105,7 +105,7 @@ li {
     .main .header-logo .header-logo-ul a:hover {
       color: #ccc;
       text-decoration: none; }
-    .main .header-logo .header-logo-ul .logo {
+    .main .header-logo .header-logo-ul .logo, .main .header-logo .header-logo-ul .socialMax .big-logo, .main .socialMax .header-logo .header-logo-ul .big-logo {
       line-height: 24px !important;
       padding: 4px;
       letter-spacing: 5px;
@@ -184,7 +184,7 @@ li {
   grid-template-columns: repeat(9, 2fr); }
   .main .socialMax:hover {
     padding: 22px; }
-    .main .socialMax:hover a {
+    .main .socialMax:hover a:not(.mail) {
       font-size: 34px; }
   .main .socialMax .m-l1, .main .socialMax .m-l2, .main .socialMax .m-l3, .main .socialMax .m-l4, .main .socialMax .m-l5 {
     -webkit-transform: rotate(0deg);
@@ -208,9 +208,22 @@ li {
   .main .socialMax .contactM, .main .socialMax .m1 .touch, .main .m1 .socialMax .touch {
     display: block;
     grid-row: 7;
-    grid-column: 5;
+    grid-column: 4/7;
     text-align: center;
     font-size: 18px; }
+  .main .socialMax .li-big-logo {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background: #fff;
+    padding: 0px 6px; }
+  .main .socialMax .big-logo {
+    -webkit-text-stroke: 1px #fff;
+    color: #222;
+    letter-spacing: 5px;
+    line-height: 39px; }
   .main .socialMax .touch {
     display: block;
     grid-row: 2;
@@ -225,12 +238,16 @@ li {
     .main .socialMax a:hover, .main .socialMax a:focus {
       color: #aaa;
       text-decoration: none; }
-  .main .socialMax .mobile:hover {
-    color: #aaa;
-    cursor: pointer; }
+  .main .socialMax .mobile {
+    margin-bottom: 10px; }
+    .main .socialMax .mobile:hover {
+      color: #aaa;
+      cursor: pointer; }
   .main .socialMax .mail {
-    font-size: 14px !important;
+    font-size: inherit;
     color: #333; }
+    .main .socialMax .mail:hover {
+      font-size: inherit; }
 
 .main .m5 {
   display: grid;

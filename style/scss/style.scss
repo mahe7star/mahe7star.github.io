@@ -173,7 +173,7 @@ li{
 	    grid-template-columns: repeat(9, 2fr);
 	    &:hover{
 		  	padding:22px;
-		  	a{
+		  	a:not(.mail){
 		  		font-size: 34px;
 		  	}
 		  }
@@ -203,9 +203,24 @@ li{
 		.contactM{
 			display: block;
 			grid-row:7;
-			grid-column:5;
+		    grid-column: 4/7;
 			text-align: center;
 			font-size: 18px;
+		}
+		.li-big-logo{
+			display: inline-block;
+		    height: 40px;
+		    width: 40px;
+		    text-align: center;
+		    border-radius: 50%;
+		    background: #fff;
+		    padding: 0px 6px;
+		}
+		.big-logo{
+			-webkit-text-stroke: 1px #fff;
+		    color: #222;
+		    letter-spacing: 5px;
+		    line-height: 39px;
 		}
 		.touch{
 			display: block;
@@ -222,15 +237,22 @@ li{
 			text-decoration: none;
 		  }
 		}
+		.big-logo{
+			@extend .logo;
+		}
 		.mobile{
+			margin-bottom: 10px;
 			&:hover{
 				color: #aaa;
 				cursor: pointer;
 			}
 		}
 		.mail{
-			font-size: 14px !important;
+			font-size: inherit;
 			color: #333;
+			&:hover{
+				font-size: inherit;
+			}
 		}
 	}
 	// socail media end
