@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:900");
+@import url("https://fonts.googleapis.com/css?family=Anton");
 @import url("https://fonts.googleapis.com/css?family=Uncial+Antiqua");
 @-webkit-keyframes piechart {
   from {
@@ -96,20 +97,15 @@ li {
     margin: 0; }
     .main .header-logo .header-logo-ul li {
       display: inline-block;
-      list-style: none;
-      border-radius: 50%;
-      background: #fff;
-      height: 25px;
-      width: 25px;
-      margin-top: 7px; }
+      list-style: none; }
     .main .header-logo .header-logo-ul a:hover {
       color: #ccc;
       text-decoration: none; }
     .main .header-logo .header-logo-ul .logo, .main .header-logo .header-logo-ul .socialMax .big-logo, .main .socialMax .header-logo .header-logo-ul .big-logo {
-      line-height: 24px !important;
-      padding: 4px;
-      letter-spacing: 5px;
-      font-size: 20px !important; }
+      line-height: 40px !important;
+      color: #666;
+      font-size: 20px !important;
+      font-family: 'Anton', sans-serif; }
 
 .main .m1 {
   grid-column: 1;
@@ -310,6 +306,17 @@ li {
     padding-left: 62px; }
     .main .landing-section .desc p {
       font-size: 30px; }
+    .main .landing-section .desc .whatermark {
+      position: absolute;
+      border-radius: 50%;
+      border: 1px solid #1078b7;
+      padding: 30px 36px 35px;
+      right: -25px;
+      top: 20%;
+      font-size: 244px;
+      -webkit-text-stroke: 1px #1078b7;
+      color: #fff;
+      opacity: 0.5; }
 
 .main .about-content {
   display: grid;

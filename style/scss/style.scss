@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:900');
+@import url('https://fonts.googleapis.com/css?family=Anton');
 @import url('https://fonts.googleapis.com/css?family=Uncial+Antiqua');
 @import 'mixin.scss';
 
@@ -81,22 +82,23 @@ li{
 		  li{
 			  display: inline-block;
 			  list-style: none;
-			  border-radius: 50%;
-			  background: #fff;
-			  height: 25px;
-			  width: 25px;
-			  margin-top: 7px;
+			  // border-radius: 50%;
+			  // background: #fff;
+			  // height: 25px;
+			  // width: 25px;
 			}
 			& a:hover{
 			  color: #ccc;
 			  text-decoration: none;
 			}
 			.logo{
-			  line-height: 24px!important;
-			  padding: 4px;
-			  letter-spacing: 5px;
+			  line-height: 40px!important;
+			  // padding: 4px;
+			  // letter-spacing: 2px;
+			  color: #666;
 			  font:{
 			  	size: 20px !important;
+			  	family: 'Anton', sans-serif;
 			  	// family: 'Uncial Antiqua', cursive
 			  }
 			}
@@ -320,6 +322,17 @@ li{
 			padding-left:62px;
 			p{
 				font-size: 30px;
+			}
+			.whatermark{
+				    position: absolute;
+				    border-radius: 50%;
+				    border: 1px solid #1078b730;
+				    padding: 30px 36px 35px;
+				    right: -25px;
+				    top: 20%;
+				    font-size: 244px;
+				    -webkit-text-stroke: 1px #1078b730;
+				    color: #fff;
 			}
 		}
 	}
