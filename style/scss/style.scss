@@ -119,7 +119,7 @@ li{
 	  padding: 18px;
 	  transition: 0.8s;
 	  z-index: 1000;
-	  width: 50px;
+	  width: 55px;
 	  left: 0;
 	  &:hover{
   	    width: 60px;
@@ -230,6 +230,9 @@ li{
 		    letter-spacing: 5px;
 		    line-height: 35px;
 		}
+		.zoomIn{
+			animation-delay:0.4s;
+		}
 		.touch{
 			display: block;
 			grid-row:2;
@@ -241,7 +244,7 @@ li{
 		  font-size: 34px;
 		  transition:0.1s;
 		  &:hover,&:focus{
-		  	color: #aaa;
+		  	color: #666;
 			text-decoration: none;
 		  }
 		}
@@ -251,7 +254,7 @@ li{
 		.mobile{
 			margin-bottom: 10px;
 			&:hover{
-				color: #aaa;
+				color: #666;
 				cursor: pointer;
 			}
 		}
