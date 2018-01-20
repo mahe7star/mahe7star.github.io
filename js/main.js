@@ -16,5 +16,11 @@ $(function(){
 		console.log(side);
 		side.addClass('socialMax');
 	});
+	$('#portfolio').click(function(){
+		$('.mg-section').fadeOut();
+		$('.mg-section').hide();
+		$('.m1').removeClass('socialMax');
+		$('.portfolio').fadeIn();
+	});
 });
 
