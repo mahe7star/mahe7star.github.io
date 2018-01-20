@@ -22,5 +22,8 @@ $(function(){
 		$('.m1').removeClass('socialMax');
 		$('.portfolio').fadeIn();
 	});
+	$('.work-btn').click(function(){
+		$('#portfolio').trigger('click');
+	})
 });
 
