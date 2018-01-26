@@ -228,9 +228,11 @@ li {
     color: #222;
     letter-spacing: 5px;
     line-height: 35px; }
-  .main .socialMax .zoomIn {
+  .main .socialMax .fadeIn {
     -webkit-animation-delay: 0.4s;
-    animation-delay: 0.4s; }
+    animation-delay: 0.4s;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s; }
   .main .socialMax .touch {
     display: block;
     grid-row: 2;
