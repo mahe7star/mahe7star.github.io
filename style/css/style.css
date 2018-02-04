@@ -509,6 +509,8 @@ li {
         font-size: 26px; }
       .main .landing-section .desc p {
         font-size: 18px; }
+      .main .landing-section .desc .work-btn {
+        display: none; }
     .main .landing-section .desc .watermark {
       z-index: -1;
       font-size: 170px;
