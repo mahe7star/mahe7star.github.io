@@ -514,7 +514,8 @@ li {
     .main .landing-section .desc .watermark {
       z-index: -1;
       font-size: 170px;
-      right: -30px; }
+      right: -30px;
+      top: 25%; }
   .main .m1 {
     display: none; }
   .main .m5 {
