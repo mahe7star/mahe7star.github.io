@@ -625,7 +625,9 @@ $breakpoint-tablet: 768px;
 					grid-row: 2;
 					grid-template-rows: auto;
 					.r1{
-
+						.m2,.m3{
+							padding: 0 15px;
+						}
 					}
 					.r2{
 						.r-l2{

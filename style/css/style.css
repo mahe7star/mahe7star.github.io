@@ -571,6 +571,8 @@ li {
         grid-column: 1;
         grid-row: 2;
         grid-template-rows: auto; }
+        .main .about-content .mid-content-div .m-r2 .r1 .m2, .main .about-content .mid-content-div .m-r2 .r1 .m3 {
+          padding: 0 15px; }
         .main .about-content .mid-content-div .m-r2 .r2 .r-l2 .pie {
           width: 150px;
           height: 150px; }
