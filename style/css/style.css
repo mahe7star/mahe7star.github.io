@@ -314,6 +314,7 @@ li {
       -webkit-transition: 0.3s;
       -o-transition: 0.3s;
       transition: 0.3s;
+      position: absolute;
       cursor: pointer; }
       .main .landing-section .desc .work-btn:hover {
         color: #fff;
