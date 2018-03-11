@@ -170,6 +170,9 @@ li{
 			@extend .contactM;
 
 		}
+		.close-contact{
+			display: none;
+		}
 	}
 	.socialMax{
 	    width: 100%;
@@ -677,9 +680,7 @@ $breakpoint-tablet: 768px;
 				}
 			}
 		}
-		.m1{
-			display:none;
-		}
+		
 		.m5{
 			display: none;
 		} 
@@ -710,5 +711,30 @@ $breakpoint-tablet: 768px;
 				grid-row: 4;
 			}
 		}
+		.m1{
+			display:none;
+		}
+		.socialMax{
+			display: grid;
+			&:hover a{
+				font-size: 20px;
+			}
+			.close-contact{
+				display: block;
+				position: absolute;
+				right: 30px;
+				top: 20px;
+			}
+			a{
+				font-size: 20px;
+				&:hover,&:focus{
+					font-size:20px;
+				}
+			}
+			.touch{
+				grid-column: 2/9;
+			}
+		}
+
 	} 
 }

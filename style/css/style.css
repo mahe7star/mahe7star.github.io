@@ -163,6 +163,8 @@ li {
     transition: 0.8s; }
   .main .m1 .contactM, .main .m1 .touch {
     display: none; }
+  .main .m1 .close-contact {
+    display: none; }
 
 .main .socialMax {
   width: 100%;
@@ -603,8 +605,6 @@ li {
       .main .portfolio .p-body .p-3 {
         grid-column: 1;
         grid-row: 3; }
-  .main .m1 {
-    display: none; }
   .main .m5 {
     display: none; }
   .main .m5-max {
@@ -627,4 +627,21 @@ li {
     .main .m5-max .l3 {
       grid-row: 3; }
     .main .m5-max .l4 {
-      grid-row: 4; } }
+      grid-row: 4; }
+  .main .m1 {
+    display: none; }
+  .main .socialMax {
+    display: grid; }
+    .main .socialMax:hover a {
+      font-size: 20px; }
+    .main .socialMax .close-contact {
+      display: block;
+      position: absolute;
+      right: 30px;
+      top: 20px; }
+    .main .socialMax a {
+      font-size: 20px; }
+      .main .socialMax a:hover, .main .socialMax a:focus {
+        font-size: 20px; }
+    .main .socialMax .touch {
+      grid-column: 2/9; } }

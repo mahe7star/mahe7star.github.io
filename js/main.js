@@ -25,7 +25,9 @@ $(function(){
 		$('#portfolio>a').addClass('active-link');
 		$('.mp-main').load('portfolio.html');
 	});
-
+	$('.close-contact').click(function(){
+		$('.m1').removeClass('socialMax');
+	});
 	$('.nav-btn').click(function(){
 		console.log("this running");
 		$('.nav-btn-lines').eq(0).toggleClass('nav-btn-lines-rt1');
