@@ -29,6 +29,7 @@ $(function(){
 		$('.m1').removeClass('socialMax');
 		$('.li>a').removeClass('active-link');
 		$('#home>a').addClass('active-link');
+		$('.mp-main').load('landing.html');
 	});
 	$('.nav-btn').click(function(){
 		console.log("this running");
