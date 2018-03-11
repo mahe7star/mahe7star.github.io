@@ -27,6 +27,8 @@ $(function(){
 	});
 	$('.close-contact').click(function(){
 		$('.m1').removeClass('socialMax');
+		$('.li>a').removeClass('active-link');
+		$('#home>a').addClass('active-link');
 	});
 	$('.nav-btn').click(function(){
 		console.log("this running");
