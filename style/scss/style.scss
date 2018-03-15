@@ -25,6 +25,12 @@
 	font-family: 'Nunito', sans-serif;
   	
 }
+a{
+	text-decoration: none;
+	&:hover,&:focus{
+		text-decoration: none!important;
+	}
+}
 .highlight{
 	color:#175dc7 !important;
 }
@@ -368,7 +374,8 @@ li{
 				    top: 20%;
 				    font-size: 244px;
 				    -webkit-text-stroke: 1px rgba(16, 120, 183, 0.2);
-				    color: #fff;
+					color: #fff;
+					z-index: -1;
 			}
 		}
 	}
@@ -654,7 +661,7 @@ $breakpoint-tablet: 768px;
 			}
 			.m4{
 				grid-column: 1;
-				grid-row: 3;
+				grid-row: 2;
 			}
 			
 		}
