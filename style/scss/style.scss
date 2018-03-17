@@ -23,7 +23,7 @@
 	padding: 0;
 	border:0;
 	font-family: 'Nunito', sans-serif;
-  	
+  	// cursor:url('../../images/cursor.png'),pointer;
 }
 a{
 	text-decoration: none;
@@ -48,6 +48,12 @@ a{
 .base-bg{
 	background:#f5f5f5;
 }
+// .hover{
+// 	cursor:url('../../images/clicker.png'),pointer !important;
+// 	&:hover{
+// 		cursor:url('../../images/clicker.png'),pointer !important;
+// 	}
+// }
 .index-1{
 	display:block;
 	z-index: 1;
@@ -508,9 +514,15 @@ li{
 	    	.p-1,.p-2,.p-3{
 				margin: 10px;
 				text-align: center;
+				transition: 0.3s;
+				padding-top: 20px;
 				.pt-desc{
 					color: #666;
 					font-size: 13px;
+				}
+				&:hover img{
+					transform:scale(1.01);
+					// box-shadow:2px 5px 10px #ccc;
 				}
 			}
 			.p-1{
@@ -525,6 +537,7 @@ li{
 			img{
 				width: 90%;
 				border: 1px solid #ddd;
+				transition: 0.5s;
 			}
 			h5{
 				color: #111;

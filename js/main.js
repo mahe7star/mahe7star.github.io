@@ -32,7 +32,6 @@ $(function(){
 		$('.mp-main').load('landing.html');
 	});
 	$('.nav-btn').click(function(){
-		console.log("this running");
 		$('.nav-btn-lines').eq(0).toggleClass('nav-btn-lines-rt1');
 		$('.nav-btn-lines').eq(1).toggleClass('nav-btn-lines-rt2');
 		$('.header-logo').toggleClass('header-logo-max');
