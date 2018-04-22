@@ -634,6 +634,15 @@ li {
   color: #111;
 }
 
+.main .portfolio .github-link {
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.main .portfolio .github-link img {
+  width: 70px;
+}
+
 @media (max-width: 768px) {
   h1 {
     font-size: 26px;
