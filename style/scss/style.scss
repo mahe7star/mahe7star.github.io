@@ -500,7 +500,8 @@ li{
 		align-items: center;
 		justify-items:center;
 	    height: 100vh;
-	    padding:0 50px;
+		padding:0 50px;
+		overflow: auto;
 	    .p-head{
 	    	margin-top: 40px;
 	    	width: 100%;
@@ -509,9 +510,11 @@ li{
 	    }
 	    .p-body{
 	    	grid-row:2;
-	    	display: grid;
-	    	grid-template-columns:3fr 3fr 3fr;
-	    	.p-1,.p-2,.p-3{
+			display: grid;
+			padding: 35px 0px;
+			grid-template-columns:3fr 3fr 3fr;
+			grid-row: 2fr;
+	    	.p-1,.p-2,.p-3,.p-4,.p-5,.p-6{
 				margin: 10px;
 				text-align: center;
 				transition: 0.3s;
@@ -533,6 +536,18 @@ li{
 			}
 			.p-3{
 				grid-column:3;
+			}
+			.p-4{
+				grid-column: 1;
+				grid-row: 2;
+			}
+			.p-5{
+				grid-column: 2;
+				grid-row: 2;
+			}
+			.p-6{
+				grid-column: 3;
+				grid-row: 2;
 			}
 			img{
 				width: 90%;
