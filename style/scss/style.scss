@@ -502,6 +502,7 @@ li{
 	    height: 100vh;
 		padding:0 50px;
 		overflow: auto;
+		overflow-x: hidden;
 	    .p-head{
 	    	margin-top: 40px;
 	    	width: 100%;
@@ -511,10 +512,10 @@ li{
 	    .p-body{
 	    	grid-row:2;
 			display: grid;
-			padding: 35px 0px;
+			padding: 35px 50px;
 			grid-template-columns:3fr 3fr 3fr;
-			grid-row: 2fr;
-	    	.p-1,.p-2,.p-3,.p-4,.p-5,.p-6{
+			grid-row: 1fr 1fr 1fr;
+	    	.p-1,.p-2,.p-3,.p-4,.p-5,.p-6,.p-7,.p-8,.p-9{
 				margin: 10px;
 				text-align: center;
 				transition: 0.3s;
@@ -548,6 +549,14 @@ li{
 			.p-6{
 				grid-column: 3;
 				grid-row: 2;
+			}
+			.p-7{
+				grid-column: 1;
+				grid-row: 3;
+			}
+			.p-8{
+				grid-column: 2;
+				grid-row: 3;
 			}
 			img{
 				width: 90%;
@@ -708,8 +717,9 @@ $breakpoint-tablet: 768px;
 			overflow-x: hidden;
 			height: 95vh;
 			.p-body{
-				grid-template-columns: 1fr;
-				grid-template-rows: repeat(3,3fr);
+				// grid-template-columns: 1fr;
+				// grid-template-rows: repeat(3,3fr);
+				display: block;
 				.p-1{
 					grid-column: 1;
 					grid-row: 1;
