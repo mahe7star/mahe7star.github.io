@@ -722,6 +722,10 @@ $breakpoint-tablet: 768px;
 				// grid-template-columns: 1fr;
 				// grid-template-rows: repeat(3,3fr);
 				display: block;
+				&>div{
+					margin-left: 0 !important;
+					margin-right: 0 !important; 
+				}
 				.p-1{
 					grid-column: 1;
 					grid-row: 1;
@@ -733,6 +737,10 @@ $breakpoint-tablet: 768px;
 				.p-3{
 					grid-column: 1;
 					grid-row: 3;
+				}
+
+				img {
+					width: 100%;
 				}
 			}
 		}

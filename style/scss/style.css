@@ -916,6 +916,10 @@ li {
   .main .portfolio .p-body {
     display: block;
   }
+  .main .portfolio .p-body > div {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
   .main .portfolio .p-body .p-1 {
     -ms-grid-column: 1;
     grid-column: 1;
@@ -933,6 +937,9 @@ li {
     grid-column: 1;
     -ms-grid-row: 3;
     grid-row: 3;
+  }
+  .main .portfolio .p-body img {
+    width: 100%;
   }
   .main .m5 {
     display: none;
