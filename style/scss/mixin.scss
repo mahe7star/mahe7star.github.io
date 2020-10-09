@@ -14,23 +14,22 @@
 }
 @mixin animate($name, $duration, $iteration, $fillmode) {
   -webkit-animation-duration: $duration;
-     -moz-animation-duration: $duration;
-       -o-animation-duration: $duration;
-          animation-duration: $duration;
+  -moz-animation-duration: $duration;
+  -o-animation-duration: $duration;
+  animation-duration: $duration;
 
   -webkit-animation-iteration-count: $iteration;
-     -moz-animation-iteration-count: $iteration;
-       -o-animation-iteration-count: $iteration;
-          animation-iteration-count: $iteration;
+  -moz-animation-iteration-count: $iteration;
+  -o-animation-iteration-count: $iteration;
+  animation-iteration-count: $iteration;
 
   -webkit-animation-name: $name;
-     -moz-animation-name: $name;
-       -o-animation-name: $name;
-          animation-name: $name;
+  -moz-animation-name: $name;
+  -o-animation-name: $name;
+  animation-name: $name;
 
   -webkit-animation-fill-mode: $fillmode;
-     -moz-animation-fill-mode: $fillmode;
-       -o-animation-fill-mode: $fillmode;
-          animation-fill-mode: $fillmode;       
-
+  -moz-animation-fill-mode: $fillmode;
+  -o-animation-fill-mode: $fillmode;
+  animation-fill-mode: $fillmode;
 }
