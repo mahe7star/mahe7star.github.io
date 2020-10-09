@@ -1,2 +1,1 @@
-# mahe7star.github.io
-visit me at https://mahe7star.github.io/
+This is a starter template for [Learn Next.js](https://nextjs.org/learn).
