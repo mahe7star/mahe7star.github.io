@@ -1,0 +1,1 @@
+{"ast":null,"code":"const ROUTES = [{\n  pathname: '/',\n  label: 'Home'\n}, {\n  pathname: '/designs',\n  label: 'Designs'\n}, {\n  pathname: '/contact',\n  label: 'Contact'\n}];\nexport default ROUTES;","map":null,"metadata":{},"sourceType":"module"}
